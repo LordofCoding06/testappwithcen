@@ -1,20 +1,21 @@
-body {
-    background-image: url(../img/beispiel.txt);
+body{
+    background-image: url("assets/land.png");
 }
 
-.player {
+.player{
     width: 80px;
     height: 100px;
-    background-image: url(../img/beispiel.txt);
+    background-image: url("assets/player_front.png");
     background-size: 240px 100px;
     background-position: -80px 0;
     position: fixed;
     z-index: 999;
 }
-.player.active {
+.player.active{
     animation: .2s walk linear infinite;
 }
-@keyframes walk {
+
+@keyframes walk{
     0%, 32%{
         background-position: 0 0;
     }
@@ -26,19 +27,19 @@ body {
     }
 }
 
-.bush {
-    width: 40px;
-    height: 50px;
-    background-image: url(../img/beispiel.txt);
+.bush{
+    width: 50px;
+    height: 40px;
+    background-image: url("assets/bush.png");
     background-size: 100% 100%;
     position: fixed;
     z-index: -1;
 }
 
-.pokeball {
+.pokeball{
     width: 30px;
     height: 30px;
-    background-image: url(../img/beispiel.txt);
+    background-image: url("assets/pokeball.png");
     background-size: 100% 100%;
     position: fixed;
 }
